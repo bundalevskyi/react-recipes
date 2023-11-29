@@ -92,32 +92,8 @@ button {
 
 /*/////////// HEADER ////////////*/
 
-.logo {
-  font-weight: bold;
-}
-.logo__img {
-  width: 140px;
-  padding-right: 20px;
-}
 
-/* .header {
-  background-color: #ffc744;
-}
 
-.header__inner {
-  height: 110px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
-
-.menu__list {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  padding: 20px;
-  padding-right: 60px;
-}
 
 .menu__list-link {
   font-size: 16px;
@@ -153,6 +129,10 @@ button {
 .menu__list-link--active::after {
   transform: scaleX(1);
 }
+
+
+
+
 
 /*/////////// TOP ////////////*/
 
@@ -586,7 +566,6 @@ button {
 }
 
 /*///////////////*/
-
 
 .fade-enter {
   opacity: 0;

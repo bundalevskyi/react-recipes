@@ -4,11 +4,12 @@ import "../css/reset.css";
 import YellowButton from "../UI/MyButtons/YellowButton";
 import Slider from "../components/Slider";
 import { Link } from "react-router-dom";
-import { Container } from "../components/StyledComponents/StyledComp";
+import {
+  Container,
+} from "../components/StyledComponents/StyledComp";
 
 const Home = () => {
   return (
-    <div>
       <Container>
         <section className="top section__inner">
           <div className="top__inner">
@@ -138,7 +139,6 @@ const Home = () => {
           </div>
         </section>
       </Container>
-    </div>
   );
 };
 export default Home;
