@@ -47,7 +47,9 @@ const RecipesVeg = () => {
             Explore Your Taste:&nbsp;
             <span>Choose a Recipe That Suits You!</span>
           </h1>
-          <Search searchValue={searchValue} setSearchValue={setSearchValue} />
+          <div className="search__wrapper">
+            <Search searchValue={searchValue} setSearchValue={setSearchValue} />
+          </div>
           <CategoriesVeg
             value={categoryId}
             onClickCategory={(index) => setCategoryId(index)}
