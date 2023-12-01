@@ -4,6 +4,8 @@ import styled from "styled-components";
 export const StyledForm = styled.form`
   margin: 0 auto;
   position: relative;
+  height: 0;
+
 
   .search__input {
     width: 220px;
@@ -41,12 +43,7 @@ export const StyledForm = styled.form`
   @media (max-width: 900px) {
     order: 2;
     margin: 0  60px 0 60px;
-    positon: absolute;
-    top:-100px;
     z-index:10;
-    height: 20px;
-    
-    
 
     .search__input {
       width:100%;
@@ -60,7 +57,6 @@ export const StyledForm = styled.form`
   }
 
   @media (max-width: 460px) {
-    height: 0;
     margin: 0  30px 0 30px;
   }
 

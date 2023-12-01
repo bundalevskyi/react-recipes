@@ -690,15 +690,24 @@ footer {
   .recipes__title-mob {
     margin: 0 auto;
     display: block;
-    margin-bottom: 0;
   }
+
   .recipes__title {
     display: none;
   }
 
   .recipes__categ-part {
     margin-top: 0;
-    gap: 35px;
+    position: relative;
+    gap: 0;
+  }
+
+  .search__wrapper {
+    max-width: 480px;
+    width: 100%;
+    position: absolute;
+    bottom: 70px;
+    z-index: 80;
   }
 
   .recipes__inner {
@@ -741,6 +750,10 @@ footer {
 
   .categories__text:last-child {
     margin-bottom: 0;
+  }
+
+  .recipes__list {
+    margin-top: 40px;
   }
 }
 
