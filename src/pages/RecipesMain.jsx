@@ -1,12 +1,10 @@
 import React from "react";
 import Categories from "../components/Categories";
 import Tab from "../components/Tab";
-import Search from "../UI/MyButtons/Search";
+import Search from "../components/Search";
 import axios from "axios";
 import { Container } from "../components/StyledComponents/StyledComp";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-
-
 
 const RecipesMain = () => {
   const [items, setItems] = React.useState([]);
@@ -42,12 +40,14 @@ const RecipesMain = () => {
     </CSSTransition>
   ));
 
-
-
   return (
     <Container>
-      <div className="receipts__inner">
+      <div className="recipes__inner">
         <div className="recipes__categ-part">
+          <h1 className="recipes__title-mob">
+            Explore Your Taste:&nbsp;
+            <span>Choose a Recipe That Suits You!</span>
+          </h1>
           <Search searchValue={searchValue} setSearchValue={setSearchValue} />
           <Categories
             value={categoryId}
@@ -55,17 +55,13 @@ const RecipesMain = () => {
           />
         </div>
 
-        <div className="recepit__list-wrapper">
-          <h1 className="receipts__title">
-            Explore Your Appetite:&nbsp;
-            <span>
-              Cook According to Your Mood and Begin Your Culinary Journey!
-            </span>
+        <div className="recipe__list-wrapper">
+          <h1 className="recipes__title">
+            Explore Your Taste:&nbsp;
+            <span>Choose a Recipe That Suits You!</span>
           </h1>
 
-          <TransitionGroup className="receipts__list">
-            {cards}
-          </TransitionGroup>
+          <TransitionGroup className="recipes__list">{cards}</TransitionGroup>
         </div>
       </div>
     </Container>

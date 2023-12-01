@@ -38,42 +38,42 @@ const OneRecipe = () => {
   ));
 
   const ingredientsList = ingredients.map((ingredient, index) => (
-    <li className="receipt__ingredient-item" key={index}>
+    <li className="recipe__ingredient-item" key={index}>
       {ingredient}
     </li>
   ));
 
   return (
     <Container>
-      <div className="receipt__wrapper">
+      <div className="recipe__wrapper">
         <BackButton />
-        <div className="receipt__inner">
-          <div className="receipt__first-part">
-            <h1 className="receipt__title">{items.title}</h1>
-            <div className="receipt__descr">{items.descr}</div>
-            <div className="receipt__steps">
-              <h3 className="receipt__method-title">Method of Preparation</h3>
+        <div className="recipe__inner">
+          <div className="recipe__first-part">
+            <h1 className="recipe__title">{items.title}</h1>
+            <div className="recipe__descr">{items.descr}</div>
+            <div className="recipe__steps">
+              <h3 className="recipe__method-title">Method of Preparation</h3>
               {stepsList}
             </div>
           </div>
-          <div className="receipt__second-part">
-            <img src={items.img} alt="" className="receipt__img" />
-            <div className="receipt__prep">
-              <div className="receipt__prep-inner">
+          <div className="recipe__second-part">
+            <img src={items.img} alt="" className="recipe__img" />
+            <div className="recipe__prep">
+              <div className="recipe__prep-inner">
                 <ClockSvg />
-                <p className="receipt__time">{items.time}</p>
+                <p className="recipe__time">{items.time}</p>
               </div>
-              <div className="receipt__prep-inner">
+              <div className="recipe__prep-inner">
                 <ClocheSvg />
-                <p className="receipt__portion">{items.portions}</p>
+                <p className="recipe__portion">{items.portions}</p>
               </div>
-              <div className="receipt__prep-inner">
+              <div className="recipe__prep-inner">
                 <StarSvg />
-                <p className="receipt__level">{items.level}</p>
+                <p className="recipe__level">{items.level}</p>
               </div>
             </div>
             <h1 className="ingredients__title">Ingredients:</h1>
-            <ul className="receipt__ingredients-list">{ingredientsList}</ul>
+            <ul className="recipe__ingredients-list">{ingredientsList}</ul>
           </div>
         </div>
       </div>

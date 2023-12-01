@@ -36,7 +36,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="best section__inner">
+        {/* <section className="best section__inner">
           <div className="best__inner">
             <div className="best__descr">
               <h1 className="best__title section__title">
@@ -137,7 +137,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </Container>
   );
 };

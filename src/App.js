@@ -8,8 +8,8 @@ function App() {
     <div>
       <BrowserRouter>
         <Header />
-        {/* <AppRouter /> */}
-        {/* <Footer /> */}
+         <AppRouter /> 
+        {/*<Footer /> */}
       </BrowserRouter>
     </div>
   );

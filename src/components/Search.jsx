@@ -2,13 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 export const StyledForm = styled.form`
-  max-width: 220px;
   margin: 0 auto;
   position: relative;
 
   .search__input {
     width: 220px;
-    padding: 6px 30px 6px 15px;
+    padding: 5px 29px 5px 14px;
     background-color: #fbf2df;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
@@ -34,12 +33,46 @@ export const StyledForm = styled.form`
     top: 10px;
     cursor: pointer;
     z-index: 1;
-
     &:hover {
       fill: #ffbb17;
     }
   }
+
+  @media (max-width: 900px) {
+    order: 2;
+    margin: 0  60px 0 60px;
+    positon: absolute;
+    top:-100px;
+    z-index:10;
+    height: 20px;
+    
+    
+
+    .search__input {
+      width:100%;
+    background-color: transparent;
+    box-shadow: 0 0 0 0 #cd4b5c;
+    }
+  }
+
+  @media (max-width: 560px) {
+    margin: 0  30px 0 30px;
+  }
+
+  @media (max-width: 460px) {
+    height: 0;
+    margin: 0  30px 0 30px;
+  }
+
+  @media (max-width: 410px) {
+    margin: 0  40px 0 40px;
+  }
+
+
 `;
+
+
+
 
 const Search = ({ searchValue, setSearchValue }) => {
   return (

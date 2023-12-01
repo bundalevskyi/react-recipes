@@ -10,11 +10,12 @@ const CategoriesVeg = ({ value, onClickCategory }) => {
   ];
 
   return (
-    <div className="receipts__categories">
-      <ul className="receipts__categories-inner vegan__border">
-        <h2 className="receipts__categ-title vegan__categ-title">
+    <div className="recipes__categories">
+      <div className="recipes__categories-inner vegan__border">
+        <h2 className="recipes__categ-title vegan__categ-title">
           Category Selection
         </h2>
+        <div className="categ">
         {categ.map((categoryName, index) => (
           <li
             key={index}
@@ -25,7 +26,8 @@ const CategoriesVeg = ({ value, onClickCategory }) => {
             {categoryName}
           </li>
         ))}
-      </ul>
+        </div>
+      </div>
     </div>
   );
 };

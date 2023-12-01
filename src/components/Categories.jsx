@@ -11,20 +11,22 @@ const Categories = ({ value, onClickCategory }) => {
   ];
 
   return (
-    <div className="receipts__categories">
-      <ul className="receipts__categories-inner">
-        <h2 className="receipts__categ-title">Category Selection</h2>
-        {categ.map((categoryName, index) => (
-          <li
-            key={index}
-            onClick={() => onClickCategory(index)}
-            className={`categories__text ${
-              value === index ? "categories__text--active" : ""
-            }`}>
-            {categoryName}
-          </li>
-        ))}
-      </ul>
+    <div className="recipes__categories">
+      <div className="recipes__categories-inner">
+        <h2 className="recipes__categ-title">Category Selection</h2>
+        <div className="categ">
+          {categ.map((categoryName, index) => (
+            <li
+              key={index}
+              onClick={() => onClickCategory(index)}
+              className={`categories__text ${
+                value === index ? "categories__text--active" : ""
+              }`}>
+              {categoryName}
+            </li>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

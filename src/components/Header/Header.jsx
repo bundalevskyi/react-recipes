@@ -51,9 +51,9 @@ const Header = () => {
             </div>
             <div onClick={() => setNav(!nav)} className={style.mobile__btn}>
               {nav ? (
-                <CloseIcon style={{ fontSize: 30 }} />
+                <CloseIcon style={{ fontSize: 30, color: "#55504f" }} />
               ) : (
-                <MenuIcon style={{ fontSize: 30 }} />
+                <MenuIcon style={{ fontSize: 30, color: "#55504f" }} />
               )}
             </div>
           </nav>
