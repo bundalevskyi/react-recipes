@@ -46,9 +46,7 @@ export const StyledForm = styled.form`
   }
 
   
-  input:focus,
-  textarea:focus {
-    outline: none;
+
 
 
   @media (max-width: 900px) {
