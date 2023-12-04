@@ -32,7 +32,7 @@ export const StyledForm = styled.form`
     position: absolute;
     fill: #cd4b5c;
     right: 10px;
-    top: 10px;
+    top: 11px;
     cursor: pointer;
     z-index: 1;
     &:hover {
