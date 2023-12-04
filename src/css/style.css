@@ -67,6 +67,17 @@ li {
   list-style: none;
 }
 
+input,
+textarea {
+  font-size: 16px; /* Размер шрифта, который подходит для мобильных устройств */
+}
+
+/* Если необходимо убрать обводку при фокусировке, добавьте следующий код: */
+input:focus,
+textarea:focus {
+  outline: none; /* Убираем обводку */
+}
+
 button {
   border: none;
   padding: 0;
@@ -653,7 +664,7 @@ footer {
     grid-template-columns: auto auto;
     grid-auto-rows: auto auto;
   }
-  .recipes__categ-part{
+  .recipes__categ-part {
     gap: 100px;
   }
 }
@@ -783,7 +794,6 @@ footer {
     font-size: 16px;
     max-width: 100%;
   }
-
 
   .recipes__item-title {
     font-size: 14px;
