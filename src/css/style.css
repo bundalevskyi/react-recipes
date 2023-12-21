@@ -69,13 +69,12 @@ li {
 
 input,
 textarea {
-  font-size: 16px; /* Размер шрифта, который подходит для мобильных устройств */
+  font-size: 16px;
 }
 
-/* Если необходимо убрать обводку при фокусировке, добавьте следующий код: */
 input:focus,
 textarea:focus {
-  outline: none; /* Убираем обводку */
+  outline: none;
 }
 
 button {
@@ -99,9 +98,6 @@ button {
   margin-bottom: 25px;
   font-weight: 900;
   max-width: 380px;
-}
-.section__inner {
-  margin-bottom: 170px;
 }
 
 .blueBtn {
@@ -173,15 +169,17 @@ button {
 
 .top__inner {
   display: flex;
+  height: 80vh;
   gap: 15px;
-  margin-top: 40px;
+  margin-top: 6vh;
   justify-content: center;
 }
+
 .top__descr {
   max-width: 540px;
   margin-top: 40px;
-  margin-bottom: 35vh;
 }
+
 .top__title {
   color: #55504f;
   font-size: 48px;
@@ -189,9 +187,11 @@ button {
   font-weight: 900;
   line-height: 1.2;
 }
+
 .top__title span {
   color: #ffbb17;
 }
+
 .top__descr-text {
   font-size: 18px;
   font-weight: 400;
@@ -364,6 +364,7 @@ button {
 
 .recipes__inner {
   margin: 40px auto 0;
+  padding-bottom: 20vh;
   display: flex;
   justify-content: space-between;
   gap: 15px;
@@ -443,7 +444,6 @@ button {
   gap: 40px;
   grid-auto-rows: minmax(100px, auto);
   justify-content: start;
-  margin-bottom: 30vh;
 }
 
 .recipes__item {
@@ -519,7 +519,6 @@ button {
   border-width: 4px 4px 4px;
   box-shadow: 5px 5px 0 0 #cb5060;
   border-color: #cd4b5c;
-  margin-bottom: 270px;
 }
 
 .recipe__first-part {
@@ -532,6 +531,13 @@ button {
 }
 
 .recipe__title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #ffbb17;
+}
+.recipe__title-mob {
+  display: none;
   margin-bottom: 10px;
   font-size: 32px;
   color: #ffbb17;
@@ -597,8 +603,6 @@ button {
 /*/////////// FOOTER ////////////*/
 
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   z-index: 0;
 }
@@ -617,6 +621,7 @@ footer {
   display: flex;
   gap: 50px;
 }
+
 .footer__list-link {
   font-size: 14px;
   font-style: normal;
@@ -671,7 +676,7 @@ footer {
 
 @media (max-width: 900px) {
   .top__inner {
-    display: flex;
+    margin-top: 0;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -731,6 +736,7 @@ footer {
   }
   .recipes__categ-title {
     margin-bottom: 0;
+    color: #cd4b5c;
   }
 
   .recipes__categories-inner {
@@ -768,6 +774,68 @@ footer {
   .recipes__list {
     margin-top: 40px;
   }
+
+  /* //////// One recipe //////// */
+  .recipe__wrapper {
+    justify-content: center;
+  }
+
+  .recipe__title-mob {
+    display: block;
+    text-align: center;
+  }
+  .recipe__title {
+    display: none;
+  }
+
+  .recipe__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recipe__first-part {
+    order: 2;
+    margin-right: 0;
+  }
+  .recipe__second-part {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+  .recipe__descr {
+    display: none;
+  }
+
+  .recipe__img {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  .recipe__method-title {
+    font-size: 22px;
+    color: #ffbb17;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .ingredients__title {
+    font-size: 22px;
+    color: #cd4b5c;
+  }
+
+  .recipe__ingredients-list {
+    margin: 0 auto 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recipe__wrapper {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .recipe__inner {
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -778,12 +846,25 @@ footer {
     margin-bottom: 30px;
     font-size: 26px;
   }
+  .recipe__wrapper{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .recipe__inner{
+    padding: 30px 20px 20px;
+  }
 }
 
 @media (max-width: 600px) {
+  .top__inner {
+    margin-top: 0;
+    height: 50vh;
+  }
+
   .top__descr {
+    margin-top: 0;
     max-width: 440px;
-    margin: 40px 0 35vh;
   }
   .top__title {
     font-size: 32px;
@@ -797,6 +878,16 @@ footer {
 
   .recipes__item-title {
     font-size: 14px;
+  }
+
+  .footer__menu{
+    padding-top: 120px;
+  }
+
+  .footer__list {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -831,12 +922,12 @@ footer {
 @media (max-width: 460px) {
   .top__descr {
     max-width: 350px;
-    margin: 40px 0 15vh;
   }
 
-  .recipes__title-mob {
-    font-size: 20px;
+  .recipe__title-mob {
+    font-size: 26px;
   }
+
 
   .categ {
     gap: 20px;

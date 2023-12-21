@@ -49,6 +49,19 @@ export const StyledButton = styled.button`
   .back__button-inner > span::after {
     top: 0;
   }
+
+
+  @media (max-width: 768px) {
+    .back__button-inner{
+      margin-top: 0;
+      padding-bottom: 10px;
+      padding-left: 10px;
+  }
+  &:hover {
+    border-radius: 20px 20px 20px 20px;
+
+}
+
 `;
 
 const BackButton = () => {

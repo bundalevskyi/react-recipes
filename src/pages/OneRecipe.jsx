@@ -57,6 +57,7 @@ const OneRecipe = () => {
             </div>
           </div>
           <div className="recipe__second-part">
+            <h1 className="recipe__title-mob">{items.title}</h1>
             <img src={items.img} alt="" className="recipe__img" />
             <div className="recipe__prep">
               <div className="recipe__prep-inner">
