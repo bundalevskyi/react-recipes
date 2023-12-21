@@ -858,7 +858,7 @@ footer {
 
 @media (max-width: 600px) {
   .top__inner {
-    margin-top: 0;
+    margin-top: 6vh;
     height: 50vh;
   }
 
@@ -892,6 +892,8 @@ footer {
 }
 
 @media (max-width: 560px) {
+  
+
   .categ {
     gap: 30px;
     padding: 10px 20px 40px;
@@ -919,6 +921,8 @@ footer {
   }
 }
 
+
+
 @media (max-width: 460px) {
   .top__descr {
     max-width: 350px;
@@ -927,7 +931,6 @@ footer {
   .recipe__title-mob {
     font-size: 26px;
   }
-
 
   .categ {
     gap: 20px;
@@ -948,6 +951,9 @@ footer {
     min-width: 180px;
   }
 }
+
+
+
 
 @media (max-width: 410px) {
   .recipes__categories-inner {
